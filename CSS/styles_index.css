@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+:root{
+    --mauve: #8c688a;
+    --rose: #ccaccb;
+    --beige: #faf5e2;
+    --mauve_fonçe: #361c35;
+    --blanc: #fff;
+    --rose_pale: #fafafa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px;
+    margin-left: 100px;
+}
+
+/*----------------------------------------------------------------*/
+
+body {
+    background-color: var(--rose_pale);
+    font-family: 'Belanosima', sans-serif;
+}
+
+nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: var(--mauve_fonçe);
+    min-height: 100px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+nav ul li {
+    float: left;
+}
+  
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+  
+nav ul  li a:hover, .dropdown:hover .dropbtn, .re {
+    background-color: var(--beige);
+    border-radius: 10px;
+    color: #000;
+}
+  
+nav ul li.dropdown {
+    display: inline-block;
+}
+  
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+  
+nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+nav .dropdown-content a:hover {
+    background-color: var(--rose);
+}
+  
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*----------------------------------------------------------------*/
+
+section.info_general{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Old_Bakery_-_29_rue_des_Francs-Bourgeois%2C_Paris.jpg/1280px-Old_Bakery_-_29_rue_des_Francs-Bourgeois%2C_Paris.jpg);
+}
+
+section.info_general p {
+    width: 75%;
+    color: rgb(238, 238, 238);
+}
+
+/*----------------------------------------------------------------*/
+
+section.boutique section.carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+section.boutique img{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+section.boutique button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--beige);
+}
+section.boutique p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-left: 30px;
+    font-size: larger;
+}
+/*----------------------------------------------------------------*/
+
+section.personnel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section.personnel section.liste {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+section.personnel section.liste div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: #575757 solid 1px;
+    border-radius: 5px;
+    width: 100px;
+    height: 140px;
+    margin: 10px;
+}
+
+section.personnel section.liste div.content span.pp{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/*----------------------------------------------------------------*/
+
+footer{
+    margin-top: 50px;
+    background-color: var(--mauve_fonçe);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    font-size: 15px;
+}
