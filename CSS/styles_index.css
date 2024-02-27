@@ -60,12 +60,25 @@ nav ul li a, .dropbtn {
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.3s;
+    position: relative;
 }
-  
-nav ul  li a:hover, .dropdown:hover .dropbtn, .re {
-    background-color: var(--beige);
-    border-radius: 10px;
-    color: #000;
+
+nav ul a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom:0;
+    margin-top: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in-out .3s;
+}
+
+nav ul li:hover a:after , a.re::after{
+    color: #fff;
+    width: 100%;
+    left: 0;
 }
   
 nav ul li.dropdown {
